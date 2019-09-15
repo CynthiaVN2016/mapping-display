@@ -1,16 +1,21 @@
 Rectangle[] rectangles = new Rectangle[16];
 String[] rectData;
+//PImage img;
+
 
 void setup() { 
   fullScreen();
   rectData = loadStrings("./mapping_info.txt");
+  //img = loadImage("./movement.jpg");
   initializeRect();
 }
 
 void draw() {
   background(255);
-  for (int i = 0; i < rectangles.length; i++) 
+  for (int i = 0; i < rectangles.length; i++) {
     rectangles[i].display();
+    //image(img, rectangles[i].x, rectangles[i].y, rectangles[i].dWidth, rectangles[i].dHeight);
+  }
 }
 
 void initializeRect() {
