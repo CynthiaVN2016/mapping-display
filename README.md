@@ -12,6 +12,8 @@ Because of that, I decided to use metaballs (basically white blobs) to add a som
 
 There were some issues working with the pixel mappings because the mapping I made while connected to the Becton LED screens were different from when I was not connected to the screen. So when I was working on processing on my laptop, I read the mapping_info.txt my team and I made from task 1 to create all the colored rectangles; however, I had to shift all the rectangles about 400 pixels to the left and to the top just so I can the blocks on my screen.
 
+The code starts on boot on my Raspberry pi & I relied heavily on the mapping info my teammates and I gathered from task 1.
+
 Here are the links to my video. The music was unintentional, but I think it fits the vibe fine.
 
 Outside Displays: https://youtu.be/RkFurIRJF5U
