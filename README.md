@@ -1,22 +1,19 @@
 # CPSC334 Creative Embedded Systems
 
-## Module: Generative Art, Task 1  
+## Module: Generative Art, Task 2 
 
-> Team: Sarim Abbas, Bryce Bjork, Cynthia Vu, TanTan Wang
+My overall artistic vision was to create cohesion. I wanted people to understand how the displays are connected to one another, but also create a relaxing ambiance in a cafe setting. I also focused a lot on technical concepts I wanted to explore (i.e. curves & metaballs).
 
-Based on the program that our team has created, we have mapped out the layout of the Becton center LED panels. You can find all of the relevant documentation in the "mapping" folder, which contains three resources.
+I wanted to definitely include a lot of colors into the product since it is such a prominent & powerful feature of the display; however, I wanted to make it clear for anyone walking by to understand that the different displays out in the corridor were connected to one another. With that in mind, I decided to make the panels a gradient to clearly indicate their relation to one another.
 
-a. "mapping.png"  
-This image file shows the layout of the entire screen space, with the LED panels as numbered colored blocks. Each rectangle's number corresponds to the same one in text file "mapping_info.txt" which contains specific data about each rectangle.
+I also wanted to incorporate things I learned in my Computer Graphics class (just for my own sake of review), so I chose to work with Bezier curves. While researching, I came across the superformula and was interested in how the different parameters created different shapes. I decided to display the bezier curve design inside the cafe and the superformula ones outside; however, the resolution on the corridor displays did not support the superformula patterns.
 
-![Mapping](./mapping/mapping.png)
+Because of that, I decided to use metaballs (basically white blobs) to add a somewhat lava lamp-esque feel since my bezier curve produces a flower, which matches the vibes. The blobs are also more recognizable on the displays and they are contained w/i the small panels.
 
-b. "mapping_info.txt"  
-This text file contains information of the height and width of the rectangle, as well as the x/y coordinates of the top left corner of each rectangle.
+There were some issues working with the pixel mappings because the mapping I made while connected to the Becton LED screens were different from when I was not connected to the screen. So when I was working on processing on my laptop, I read the mapping_info.txt my team and I made from task 1 to create all the colored rectangles; however, I had to shift all the rectangles about 400 pixels to the left and to the top just so I can the blocks on my screen.
 
-[Mapping Info File](./mapping/mapping_info.txt)
+Here are the links to my video. The music was unintentional, but I think it fits the vibe fine.
 
-c. "physicalpanels.jpg"  
-This series of images are of the physical LED panels outside of the Cafe. Each panel is labeled with the corresponding rectangle number in "mapping.png" and "mapping_info.txt".
+Outside Displays: https://youtu.be/RkFurIRJF5U
 
-![Physical Panels](./mapping/physicalpanels.jpg)
+Inside Displays: https://youtu.be/wmt0NQCQN0E
