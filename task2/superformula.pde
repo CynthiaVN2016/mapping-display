@@ -1,10 +1,15 @@
 class Superformula {
   float t = 0;
   float x, y;
+  float a, b, m, n1;
   
-  Superformula(float xpos, float ypos) {
+  Superformula(float xpos, float ypos, float A, float B, float M, float N1) {
      x = xpos;
      y = ypos;
+     a = A;
+     b = B;
+     m = M; 
+     n1 = N1;
   }
   
   void display() {
@@ -13,10 +18,10 @@ class Superformula {
     translate(x, y);
     for (float theta = 0; theta < TWO_PI; theta += 0.01) {
       float rad = r(theta, 
-        .2, // a
-        1, // b
-        1.3, // m
-        2, // n1
+        a,
+        b,
+        m,
+        n1,
         sin(t) * 2, // n2
         cos(t) * 2 // n3
         ); 
