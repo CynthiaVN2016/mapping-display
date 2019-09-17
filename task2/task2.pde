@@ -40,7 +40,7 @@ void draw() {
   
   loadPixels();
   for (int x = round(rectangles[0].x); x < width; x++) {
-    for (int y = 0; y < round(rectangles[0].dHeight/2); y ++) {
+    for (int y = 0; y < round(rectangles[0].dHeight/2)+100; y ++) {
       int index = x + y * width;
       float sum = 0;
       for (Blob2 b: blobs2) {
@@ -67,7 +67,7 @@ void initializeRect() {
     rectangles[i] = new Rectangle();
     rectangles[i].dHeight = getPixelValue(rectData[i*6+1]); 
     rectangles[i].dWidth = getPixelValue(rectData[i*6+2]); 
-    rectangles[i].x = getPixelValue(rectData[i*6+3]) - 500;
+    rectangles[i].x = getPixelValue(rectData[i*6+3]);
     rectangles[i].y = getPixelValue(rectData[i*6+4]);
     if (i < 4) {
       rectangles[i].col = lerpColor(color1, color2, (i%4)/4);
@@ -117,6 +117,6 @@ void initializeBlob() {
   
   for (int i = 0; i < blobs2.length; i++) {
     Rectangle ref = rectangles[0];
-    blobs2[i] = new Blob2(ref.x, ref.y, ref.dWidth, ref.dHeight/2);
+    blobs2[i] = new Blob2(ref.x, ref.y, ref.dWidth, ref.dHeight/2+100);
   }
 }
